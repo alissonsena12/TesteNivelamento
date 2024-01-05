@@ -1,0 +1,202 @@
+{
+	"info": {
+		"_postman_id": "39e9286c-a6f1-40e7-80b8-6d0e05a7a96f",
+		"name": "Exemplos com ParametrosAprovacaoCredito",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32163468"
+	},
+	"item": [
+		{
+			"name": "1 - Aprovação Crédito",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"valorCredito\": 10000,\r\n// Crédito Direto = 0\r\n// Crédito Consignado = 1\r\n// Crédito Pessoa Jurídica = 2 \r\n// Crédito Pessoa Física = 3\r\n// Crédito Imobiliário = 4\r\n  \"tipoCredito\": 2,\r\n  \"quantidadeParcelas\": 30,\r\n  \"dataPrimeiroVencimento\": \"2024-01-25\",\r\n    \"ParametrosAprovacaoCredito\": {\r\n    \"CreditoDiretoTaxa\": 0.02,\r\n    \"CreditoConsignadoTaxa\": 0.01,\r\n    \"CreditoPessoaJuridicaTaxa\": 0.05,\r\n    \"CreditoPessoaFisica\": 0.03,\r\n    \"CreditoImobiliario\": 0.09,\r\n    \"ValorMaximoLiberado\": 1000000.00,\r\n    \"VarlorMinimoPessoaJuridica\": 15000.00,\r\n    \"QuantidadeMinimaParcelas\": 5,\r\n    \"QuantidadeMaximaParcelas\": 72,\r\n    \"DiasPrimeiroVencimentoMinimo\": 15,\r\n    \"DiasPrimeiroVencimentoMaximo\": 40\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "https://localhost:7275/aprovacao-credito",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7275",
+					"path": [
+						"aprovacao-credito"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2 - Aprovação Crédito",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"valorCredito\": 10000,\r\n// Crédito Direto = 0\r\n// Crédito Consignado = 1\r\n// Crédito Pessoa Jurídica = 2 \r\n// Crédito Pessoa Física = 3\r\n// Crédito Imobiliário = 4\r\n  \"tipoCredito\": 1,\r\n  \"quantidadeParcelas\": 30,\r\n  \"dataPrimeiroVencimento\": \"2024-01-25\",\r\n    \"ParametrosAprovacaoCredito\": {\r\n    \"CreditoDiretoTaxa\": 0.02,\r\n    \"CreditoConsignadoTaxa\": 0.01,\r\n    \"CreditoPessoaJuridicaTaxa\": 0.05,\r\n    \"CreditoPessoaFisica\": 0.03,\r\n    \"CreditoImobiliario\": 0.09,\r\n    \"ValorMaximoLiberado\": 1000000.00,\r\n    \"VarlorMinimoPessoaJuridica\": 15000.00,\r\n    \"QuantidadeMinimaParcelas\": 5,\r\n    \"QuantidadeMaximaParcelas\": 72,\r\n    \"DiasPrimeiroVencimentoMinimo\": 15,\r\n    \"DiasPrimeiroVencimentoMaximo\": 40\r\n  }  \r\n}"
+				},
+				"url": {
+					"raw": "https://localhost:7275/aprovacao-credito",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7275",
+					"path": [
+						"aprovacao-credito"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3 - Aprovação Crédito",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"valorCredito\": 1500000,\r\n// Crédito Direto = 0\r\n// Crédito Consignado = 1\r\n// Crédito Pessoa Jurídica = 2 \r\n// Crédito Pessoa Física = 3\r\n// Crédito Imobiliário = 4\r\n  \"tipoCredito\": 1,\r\n  \"quantidadeParcelas\": 30,\r\n  \"dataPrimeiroVencimento\": \"2024-01-25\",\r\n    \"ParametrosAprovacaoCredito\": {\r\n    \"CreditoDiretoTaxa\": 0.02,\r\n    \"CreditoConsignadoTaxa\": 0.01,\r\n    \"CreditoPessoaJuridicaTaxa\": 0.05,\r\n    \"CreditoPessoaFisica\": 0.03,\r\n    \"CreditoImobiliario\": 0.09,\r\n    \"ValorMaximoLiberado\": 1000000.00,\r\n    \"VarlorMinimoPessoaJuridica\": 15000.00,\r\n    \"QuantidadeMinimaParcelas\": 5,\r\n    \"QuantidadeMaximaParcelas\": 72,\r\n    \"DiasPrimeiroVencimentoMinimo\": 15,\r\n    \"DiasPrimeiroVencimentoMaximo\": 40\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "https://localhost:7275/aprovacao-credito",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7275",
+					"path": [
+						"aprovacao-credito"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4 - Aprovação Crédito",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"valorCredito\": 100000,\r\n// Crédito Direto = 0\r\n// Crédito Consignado = 1\r\n// Crédito Pessoa Jurídica = 2 \r\n// Crédito Pessoa Física = 3\r\n// Crédito Imobiliário = 4\r\n  \"tipoCredito\": 3,\r\n  \"quantidadeParcelas\": 3,\r\n  \"dataPrimeiroVencimento\": \"2024-01-25\",\r\n    \"ParametrosAprovacaoCredito\": {\r\n    \"CreditoDiretoTaxa\": 0.02,\r\n    \"CreditoConsignadoTaxa\": 0.01,\r\n    \"CreditoPessoaJuridicaTaxa\": 0.05,\r\n    \"CreditoPessoaFisica\": 0.03,\r\n    \"CreditoImobiliario\": 0.09,\r\n    \"ValorMaximoLiberado\": 1000000.00,\r\n    \"VarlorMinimoPessoaJuridica\": 15000.00,\r\n    \"QuantidadeMinimaParcelas\": 5,\r\n    \"QuantidadeMaximaParcelas\": 72,\r\n    \"DiasPrimeiroVencimentoMinimo\": 15,\r\n    \"DiasPrimeiroVencimentoMaximo\": 40\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "https://localhost:7275/aprovacao-credito",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7275",
+					"path": [
+						"aprovacao-credito"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "5 - Aprovação Crédito",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"valorCredito\": 100000,\r\n// Crédito Direto = 0\r\n// Crédito Consignado = 1\r\n// Crédito Pessoa Jurídica = 2 \r\n// Crédito Pessoa Física = 3\r\n// Crédito Imobiliário = 4\r\n  \"tipoCredito\": 4,\r\n  \"quantidadeParcelas\": 30,\r\n  \"dataPrimeiroVencimento\": \"2024-01-10\",\r\n    \"ParametrosAprovacaoCredito\": {\r\n    \"CreditoDiretoTaxa\": 0.02,\r\n    \"CreditoConsignadoTaxa\": 0.01,\r\n    \"CreditoPessoaJuridicaTaxa\": 0.05,\r\n    \"CreditoPessoaFisica\": 0.03,\r\n    \"CreditoImobiliario\": 0.09,\r\n    \"ValorMaximoLiberado\": 1000000.00,\r\n    \"VarlorMinimoPessoaJuridica\": 15000.00,\r\n    \"QuantidadeMinimaParcelas\": 5,\r\n    \"QuantidadeMaximaParcelas\": 72,\r\n    \"DiasPrimeiroVencimentoMinimo\": 15,\r\n    \"DiasPrimeiroVencimentoMaximo\": 40\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "https://localhost:7275/aprovacao-credito",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7275",
+					"path": [
+						"aprovacao-credito"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "6 - Aprovação Crédito",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"valorCredito\": 1000000,\r\n// Crédito Direto = 0\r\n// Crédito Consignado = 1\r\n// Crédito Pessoa Jurídica = 2 \r\n// Crédito Pessoa Física = 3\r\n// Crédito Imobiliário = 4\r\n  \"tipoCredito\": 4,\r\n  \"quantidadeParcelas\": 360,\r\n  \"dataPrimeiroVencimento\": \"2024-01-10\",\r\n    \"ParametrosAprovacaoCredito\": {\r\n    \"CreditoDiretoTaxa\": 0.02,\r\n    \"CreditoConsignadoTaxa\": 0.01,\r\n    \"CreditoPessoaJuridicaTaxa\": 0.05,\r\n    \"CreditoPessoaFisica\": 0.03,\r\n    \"CreditoImobiliario\": 0.09,\r\n    \"ValorMaximoLiberado\": 1000000.00,\r\n    \"VarlorMinimoPessoaJuridica\": 15000.00,\r\n    \"QuantidadeMinimaParcelas\": 5,\r\n    \"QuantidadeMaximaParcelas\": 72,\r\n    \"DiasPrimeiroVencimentoMinimo\": 15,\r\n    \"DiasPrimeiroVencimentoMaximo\": 40\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "https://localhost:7275/aprovacao-credito",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7275",
+					"path": [
+						"aprovacao-credito"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

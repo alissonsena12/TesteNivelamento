@@ -1,0 +1,56 @@
+Documentação do Programa
+Descrição
+Este programa trata do processo de aprovação de crédito e utiliza os parâmetros ParametrosAprovacaoCredito para determinar a decisão de aprovação de crédito.
+
+Funcionamento dos Parâmetros
+A fim de possibilitar a flexibilidade na definição dos parâmetros ParametrosAprovacaoCredito, o programa segue a seguinte lógica:
+
+Parâmetros Não Informados no Body da Requisição:
+
+Caso os parâmetros ParametrosAprovacaoCredito não sejam informados no body do endpoint da controller Credito, action AprovacaoCredito, o programa irá buscar esses valores no arquivo de configuração appSettings.json.
+
+Definição dos Valores no appSettings:
+
+Caso não sejam fornecidos no body da requisição, os valores padrão dos parâmetros ParametrosAprovacaoCredito são definidos no arquivo appSettings.json. Esses valores são os seguintes:
+
+Coleções de Teste
+Na pasta Collections deste repositório, estão disponíveis coleções de teste para auxiliar nos testes com variações nas condições de ParametrosAprovacaoCredito
+
+CreditoDiretoTaxa: 2%
+CreditoConsignadoTaxa: 1%
+CreditoPessoaJuridicaTaxa: 5%
+CreditoPessoaFisica: 3%
+CreditoImobiliario: 9%
+ValorMaximoLiberado: R$ 1.000.000,00
+VarlorMinimoPessoaJuridica: R$ 15.000,00
+QuantidadeMinimaParcelas: 5
+QuantidadeMaximaParcelas: 72
+DiasPrimeiroVencimentoMinimo: 15 dias
+DiasPrimeiroVencimentoMaximo: 40 dias
+Exemplo de Configuração no appSettings.json:
+{
+  "ParametrosAprovacaoCredito": {
+    "CreditoDiretoTaxa": 0.02,
+    "CreditoConsignadoTaxa": 0.01,
+    "CreditoPessoaJuridicaTaxa": 0.05,
+    "CreditoPessoaFisica": 0.03,
+    "CreditoImobiliario": 0.09,
+    "ValorMaximoLiberado": 1000000.00,
+    "VarlorMinimoPessoaJuridica": 15000.00,
+    "QuantidadeMinimaParcelas": 5,
+    "QuantidadeMaximaParcelas": 72,
+    "DiasPrimeiroVencimentoMinimo": 15,
+    "DiasPrimeiroVencimentoMaximo": 40
+  }
+}
+
+Validação por Atributo
+
+Parâmetro ValidarNaModel
+O parâmetro `ValidarNaModel` é um booleano utilizado para determinar se a validação será realizada diretamente pelo atributo `ValidacaoAprovacaoCreditoAttribute` ou se será apenas feita apenas na camada de serviço correspondente.
+
+Quando definido como "true":
+O atributo `ValidacaoAprovacaoCreditoAttribute` realizará a validação diretamente a validações das propriedades definidas.
+
+Quando definido como "false:
+A validação será delegada para a camada de serviço associada à `AprovacaoCreditoModel`. Nesse caso, o atributo `ValidacaoAprovacaoCreditoAttribute` não realizará a validação diretamente, permitindo que a lógica de validação seja tratada separadamente pela camada de serviço.

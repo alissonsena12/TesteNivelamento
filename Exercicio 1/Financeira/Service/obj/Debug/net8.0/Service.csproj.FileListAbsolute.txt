@@ -1,0 +1,17 @@
+C:\Users\aliss\source\repos\Financeira\Service\bin\Debug\net8.0\Service.deps.json
+C:\Users\aliss\source\repos\Financeira\Service\bin\Debug\net8.0\Service.dll
+C:\Users\aliss\source\repos\Financeira\Service\bin\Debug\net8.0\Service.pdb
+C:\Users\aliss\source\repos\Financeira\Service\bin\Debug\net8.0\Interfaces.dll
+C:\Users\aliss\source\repos\Financeira\Service\bin\Debug\net8.0\Models.dll
+C:\Users\aliss\source\repos\Financeira\Service\bin\Debug\net8.0\Interfaces.pdb
+C:\Users\aliss\source\repos\Financeira\Service\bin\Debug\net8.0\Models.pdb
+C:\Users\aliss\source\repos\Financeira\Service\obj\Debug\net8.0\Service.csproj.AssemblyReference.cache
+C:\Users\aliss\source\repos\Financeira\Service\obj\Debug\net8.0\Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aliss\source\repos\Financeira\Service\obj\Debug\net8.0\Service.AssemblyInfoInputs.cache
+C:\Users\aliss\source\repos\Financeira\Service\obj\Debug\net8.0\Service.AssemblyInfo.cs
+C:\Users\aliss\source\repos\Financeira\Service\obj\Debug\net8.0\Service.csproj.CoreCompileInputs.cache
+C:\Users\aliss\source\repos\Financeira\Service\obj\Debug\net8.0\Service.csproj.CopyComplete
+C:\Users\aliss\source\repos\Financeira\Service\obj\Debug\net8.0\Service.dll
+C:\Users\aliss\source\repos\Financeira\Service\obj\Debug\net8.0\refint\Service.dll
+C:\Users\aliss\source\repos\Financeira\Service\obj\Debug\net8.0\Service.pdb
+C:\Users\aliss\source\repos\Financeira\Service\obj\Debug\net8.0\ref\Service.dll

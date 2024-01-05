@@ -1,0 +1,12 @@
+C:\Users\aliss\source\repos\Financeira\Extensions\bin\Debug\net8.0\Extensions.deps.json
+C:\Users\aliss\source\repos\Financeira\Extensions\bin\Debug\net8.0\Extensions.dll
+C:\Users\aliss\source\repos\Financeira\Extensions\bin\Debug\net8.0\Extensions.pdb
+C:\Users\aliss\source\repos\Financeira\Extensions\obj\Debug\net8.0\Extensions.csproj.AssemblyReference.cache
+C:\Users\aliss\source\repos\Financeira\Extensions\obj\Debug\net8.0\Extensions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aliss\source\repos\Financeira\Extensions\obj\Debug\net8.0\Extensions.AssemblyInfoInputs.cache
+C:\Users\aliss\source\repos\Financeira\Extensions\obj\Debug\net8.0\Extensions.AssemblyInfo.cs
+C:\Users\aliss\source\repos\Financeira\Extensions\obj\Debug\net8.0\Extensions.csproj.CoreCompileInputs.cache
+C:\Users\aliss\source\repos\Financeira\Extensions\obj\Debug\net8.0\Extensions.dll
+C:\Users\aliss\source\repos\Financeira\Extensions\obj\Debug\net8.0\refint\Extensions.dll
+C:\Users\aliss\source\repos\Financeira\Extensions\obj\Debug\net8.0\Extensions.pdb
+C:\Users\aliss\source\repos\Financeira\Extensions\obj\Debug\net8.0\ref\Extensions.dll
